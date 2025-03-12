@@ -46,6 +46,29 @@
   filter: grayscale(100%);
 }
 
+.button-hover, .credit-hover{
+    display:inline-block;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px rgba(0,0,0,0);
+    -webkit-transition-duration:.1s;
+    transition-duration:.1s;
+    -webkit-transition-property:transform;
+    transition-property:transform
+}
+.button-hover:active,
+.button-hover:focus, 
+.button-hover:hover{
+    -webkit-transform:scale(1.02);
+    transform:scale(1.02)
+}
+.credit-hover:active, 
+.credit-hover:focus, 
+.credit-hover:hover{
+    -webkit-transform:scale(1.04);
+    transform:scale(1.04)
+}
+
 
 
 /* Amazon */
