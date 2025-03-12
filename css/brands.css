@@ -36,7 +36,7 @@
 
 /* Default */
 /* From Uiverse.io by Kabak */ 
-.button button-default {
+.button.button-default {
   height: 50px;
   margin: 5px;
   width: 120px;
