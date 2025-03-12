@@ -14,7 +14,7 @@
 
 
 /* From Uiverse.io by TimTrayler */ 
-button {
+.button {
   --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
   --accent: fuchsia;
   font-weight: bold;
@@ -30,11 +30,11 @@ button {
   box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
 }
 
-button:hover {
+.button:hover {
   box-shadow: var(--hover-shadows);
 }
 
-button:active {
+.button:active {
   box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
   background-color: var(--accent);
   transform: scale(0.95);
