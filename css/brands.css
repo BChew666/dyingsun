@@ -12,22 +12,33 @@
 /* Global Button Hover Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px!important;
+  padding: 20px;
   text-decoration: none;
-  font-size: 1em;
-  color: var(--button-text-color);
-  min-height: 58px;
-  line-height: 58px;
-  cursor: pointer;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
 
-  color: var(--button-text-color);
-  background-color: var(--button-background-color);
-  width: 100%;
-  max-width: 600px;
-  border-radius: 14px;
-  margin-bottom: 13px;
+@media (hover: hover) {
+  .button:hover {
+      background-color: var(--accentColor);
+      color: var(--bgColor);
+  }
+}
+
+.button:active {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
 }
 
 
@@ -41,34 +52,20 @@
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
 
-.button-hover, .credit-hover{
-    display:inline-block;
-    -webkit-transform:perspective(1px) translateZ(0);
-    transform:perspective(1px) translateZ(0);
-    box-shadow:0 0 1px rgba(0,0,0,0);
-    -webkit-transition-duration:.1s;
-    transition-duration:.1s;
-    -webkit-transition-property:transform;
-    transition-property:transform
-}
-.button-hover:active,
-.button-hover:focus, 
-.button-hover:hover{
-    -webkit-transform:scale(1.02);
-    transform:scale(1.02)
-}
-.credit-hover:active, 
-.credit-hover:focus, 
-.credit-hover:hover{
-    -webkit-transform:scale(1.04);
-    transform:scale(1.04)
+.button:hover > .icon {
+  -webkit-box-shadow: 0px 0px 0px 4px var(--accentColor2); 
+  box-shadow: 0px 0px 0px 4px var(--accentColor2);
+  background-color: var(--accentColor2) !important;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
 }
 
+svg {
+  color: white !important;
+}
 
 
 /* Amazon */
