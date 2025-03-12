@@ -226,8 +226,8 @@ body {
 .btn {
   font-size: 17px;
   background: transparent;
-  border: none;
-  padding: 1em 1.5em;
+  border: 1px;
+  padding: none;
   color: #ffffff;
   text-transform: uppercase;
   position: relative;
