@@ -93,8 +93,8 @@
 
 /* Bandcamp */
 .button-bandcamp {
-	--button-text:#ffffff;
-	--button-background:#1d9fc3;
+	--button-text:#999999;
+	--button-background:#00000000;
 }
 
 /* Behance */
