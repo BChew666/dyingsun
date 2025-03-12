@@ -12,12 +12,6 @@
 /* Global Button Hover Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-:root {
-  --bgColor: #223344;
-  --bgColor2: #090a0f;
-  --accentColor: #FFF;
-  --font: 'Karla', sans-serif;
-  --delay: .3s; }
 
 .button {
   position: relative;
