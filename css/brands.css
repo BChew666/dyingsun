@@ -34,13 +34,6 @@
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-:root {
-  /* violet */
-  --primary-color: 111, 76, 255;
-  
-  /* white */
-  --text-color: 256, 256, 256;
-}
 
 .button {
   font-family: 'DM Sans', sans-serif;
