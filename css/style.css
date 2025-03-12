@@ -186,63 +186,96 @@ a:hover {
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button,button {
-	display:inline-flex;
-	align-items:center;
-	justify-content:center;
-	width:18.75rem;             	/* 300px */
- 	min-height:3rem;                /* 48px */
-  	padding:0.75rem 1rem;         	/* 12px ; 16px */
-  	font-size:1.125rem;           	/* 18px */
-  	font-weight:700;
-	text-decoration:none;
-	white-space:normal;
-  	background-color:var(--button-background,transparent);
-	color:var(--button-text,#000000);
-	border:var(--button-border,none);
-	border-radius:0.5rem;
-	cursor:pointer;
-	box-sizing:border-box;
-	hyphens:auto;               	/* Delete this to remove automatic hyphen on line break */
-  	margin-bottom:1rem;
-	text-align:center;
-	line-height:1.3;
-}
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
 
-/* Icons
+- Rounded user avatars
+- Buttons
+- Brand Styles
+
+*/
+
+
+/* Rounded avatars
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.icon {
-	width:1.25rem;
-	height:1.25rem;
-	margin-right:0.5rem;
-	flex-shrink:0;
+
+/* Disable this if you don't want rounded avatars for users */
+.rounded-avatar {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 3px #ffffff; 
+  box-shadow: 0px 0px 0px 3px #ffffff;
+  background-color: #ffffff !important;
+  width: 200px;
+  height: 200px;
 }
 
-/* Avatar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.avatar {
-	width: 8rem;             /* 128px */
-	height: 8rem;
-	object-fit: cover;
-	background-position: center;
-	margin-bottom: var(--spacing-l);
-  }
+.social-icon {
+  font-size: 32px;
+  padding: 10px;
+}
+.social-icon-div {
+  padding-bottom: 40px;
+}
+.social-icon{color:#fff;}
 
-   /* Modifier for no avatar rounding */
-   .avatar--none {
-	border-radius: 0%;
-  }
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  /* Modifier for rounded avatar */
-  .avatar--rounded {
-	border-radius: 50%;
-  }
-  
-  /* Modifier for slightly rounded corners */
-  .avatar--soft {
-	border-radius: 0.5rem;   /* 8px rounded corners */
-  }
+.button {
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px!important;
+  padding: 20px;
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
 
+@media (hover: hover) {
+  .button:hover {
+      background-color: var(--accentColor);
+      color: var(--bgColor);
+  }
+}
+
+.button:active {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+}
+
+
+/* Brand Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.icon {
+  right: 10px;
+  bottom: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover > .icon {
+  -webkit-box-shadow: 0px 0px 0px 4px var(--bgColor); 
+  box-shadow: 0px 0px 0px 4px var(--bgColor);
+  background-color: var(--bgColor) !important;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+
+svg {
+  color: white !important;
+}
 /* Theme System
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Light theme is default above */
