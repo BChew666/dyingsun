@@ -8,12 +8,6 @@
 /* Brand Button Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Only include brand-specific button styling here */
-.button,button {
-  color:var(--button-text,#000000);
-  background-color:var(--button-background,transparent);
-	border:var(--button-border,none);
-	transition:filter 0.2s ease,transform 0.2s ease;
-}
 
 /* Global Button Hover Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
