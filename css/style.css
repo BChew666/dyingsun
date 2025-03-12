@@ -228,7 +228,7 @@ body {
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: #ffedd3;
+  color: #ffffff;
   text-transform: uppercase;
   position: relative;
   transition: 0.5s ease;
@@ -242,12 +242,12 @@ body {
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #ffc506;
+  background-color: #ffffff;
   transition: 0.5s ease;
 }
 
 .btn:hover {
-  color: #1e1e2b;
+  color: #999999;
   transition-delay: 0.5s;
 }
 
@@ -262,7 +262,7 @@ body {
   bottom: 0;
   height: 0;
   width: 100%;
-  background-color: #ffc506;
+  background-color: #999999;
   transition: 0.4s ease;
   z-index: -1;
 }
