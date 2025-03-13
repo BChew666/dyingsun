@@ -256,6 +256,7 @@ a:hover {
 	outline-offset: 2px;
   }
 :root.theme-dark body {
+	<img src="images/cover.png">
 	background-color:#121212;
 	color:#ffffff;
 }
