@@ -212,8 +212,8 @@ a:hover {
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
-	width:1.25rem;
-	height:1.25rem;
+	width:2.25rem;
+	height:2.25rem;
 	margin-right:0.5rem;
 	flex-shrink:0;
 }
@@ -256,8 +256,7 @@ a:hover {
 	outline-offset: 2px;
   }
 :root.theme-dark body {
-	<img src="images/cover.png">
-	background-color:#121212;
+	background-color:#ffffff;
 	color:#ffffff;
 }
 :root.theme-dark a:not(.button) {
