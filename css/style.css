@@ -213,6 +213,7 @@ a:hover {
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
+	display:inline-flex;
 	width:5rem;
 	height:5rem;
 	margin-right:0.5rem;
@@ -258,7 +259,6 @@ a:hover {
   }
 :root.theme-dark body {
 	background-color:#000000;
-	background-image:"images/Wrought.tif";
 	color:#000000;
 }
 :root.theme-dark a:not(.button) {
