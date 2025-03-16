@@ -215,9 +215,8 @@ a:hover {
 .icon {
 	display:contents;
 	align:center;
-	width:5rem;
-	height:5rem;
-	margin-right:0.5rem;
+	width:3rem;
+	height:3rem;
 	flex-shrink:0;
 }
 
