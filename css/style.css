@@ -213,7 +213,8 @@ a:hover {
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
-	display:inline-flex;
+	display:contents;
+	align:center;
 	width:5rem;
 	height:5rem;
 	margin-right:0.5rem;
