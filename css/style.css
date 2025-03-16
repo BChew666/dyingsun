@@ -258,7 +258,7 @@ a:hover {
   }
 :root.theme-dark body {
 	background-color:#000000;
-	background-image:images/Wrought.tif;
+	background-image:"images/Wrought.tif";
 	color:#000000;
 }
 :root.theme-dark a:not(.button) {
