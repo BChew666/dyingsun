@@ -153,6 +153,7 @@ body {
 footer {
 	margin:var(--spacing-xxl) 0;            /* 4rem (64px) top and bottom */
     font-size:var(--scale-0);
+	color:#999999;
 }
 
 /* Responsive adjustments */
@@ -194,11 +195,11 @@ a:hover {
  	min-height:3rem;                /* 48px */
   	padding:0.75rem 1rem;         	/* 12px ; 16px */
   	font-size:1.125rem;           	/* 18px */
-  	font-weight:700;
+  	font-weight:400;
 	text-decoration:none;
 	white-space:normal;
   	background-color:var(--button-background,transparent);
-	color:var(--button-text,#000000);
+	color:var(--button-text,#999999);
 	border:var(--button-border,none);
 	border-radius:0.5rem;
 	cursor:pointer;
@@ -212,10 +213,13 @@ a:hover {
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
-	width:1.25rem;
-	height:1.25rem;
+	display:inline-flex;
+	position:relative;
+	width:2.75rem;
+	height:2.75rem;
 	margin-right:0.5rem;
 	flex-shrink:0;
+	
 }
 
 /* Avatar
@@ -256,8 +260,8 @@ a:hover {
 	outline-offset: 2px;
   }
 :root.theme-dark body {
-	background-color:#121212;
-	color:#ffffff;
+	background-color:#000000;
+	color:#000000;
 }
 :root.theme-dark a:not(.button) {
 	color:#4899F7;
